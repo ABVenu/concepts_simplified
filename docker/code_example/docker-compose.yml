@@ -1,0 +1,25 @@
+version: '3.8'
+
+services:
+  node-app:
+    build: .
+    container_name: node-app
+    ports:
+      - "5000:5000"
+    volumes:
+      - .:/usr/src/app  # Mount the local directory to the container's working directory
+    depends_on:
+      - mongodb
+    environment:
+      - MONGO_URI=mongodb://mongodb:27017/todos-app
+
+  mongodb:
+    image: mongo:latest
+    container_name: mongodb
+    ports:
+      - "27017:27017"
+    volumes:
+      - mongodb-data:/data/db
+
+volumes:
+  mongodb-data:
