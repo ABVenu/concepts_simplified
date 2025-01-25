@@ -22,4 +22,5 @@ docker push your-dockerhub-username/node-app:latest
 
 ## Others Pulling and Running
 docker pull your-dockerhub-username/node-app:latest
+
 docker run -p 5000:5000 your-dockerhub-username/node-app:latest
