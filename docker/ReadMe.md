@@ -18,12 +18,7 @@
 
 ---
 
-### **Session Outline**
-Here’s a suggested step-by-step structure for your session:
-
----
-
-#### **1. Introduction to Docker Concepts (15-20 mins)**
+#### **1. Introduction to Docker Concepts**
 - **What is Docker?**
   - Explain containers and images in simple terms (e.g., "a container is like a sandboxed environment").
 - **Why Use Docker?**
@@ -33,7 +28,7 @@ Here’s a suggested step-by-step structure for your session:
 
 ---
 
-#### **2. Overview of the App (10 mins)**
+#### **2. Overview of the App**
 - **Explain the App**: 
   - A simple Node.js app with two routes:
     - `/users` for managing users.
@@ -60,7 +55,7 @@ Here’s a suggested step-by-step structure for your session:
 
 ---
 
-#### **4. Hands-On: Students Pull and Run the App (30 mins)**
+#### **4. Hands-On: Students Pull and Run the App**
 **Step 1**: Pull the image.
 - Ask students to run:
   ```bash
@@ -76,7 +71,7 @@ Here’s a suggested step-by-step structure for your session:
 
 ---
 
-#### **5. Explore Docker Commands (15 mins)**
+#### **5. Explore Docker Commands**
 - **Check Running Containers**:
   ```bash
   docker ps
@@ -96,7 +91,7 @@ Here’s a suggested step-by-step structure for your session:
 
 ---
 
-#### **6. Wrap-Up and Next Steps (10 mins)**
+#### **6. Wrap-Up and Next Steps**
 - **Explain the Workflow**:
   - How Docker lets them run the app without worrying about dependencies.
   - How it works consistently across different machines.
